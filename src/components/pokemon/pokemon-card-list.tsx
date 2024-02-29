@@ -36,7 +36,7 @@ export default function PokemonCardList() {
     return (
       <Container>
         {isLoading &&
-          Array.from({ length: 20 }, (_, index) => index + 1).map((id) => (
+          Array.from({ length: 10 }, (_, index) => index + 1).map((id) => (
             <PokemonCardSkeleton key={id} />
           ))}
       </Container>
@@ -59,7 +59,7 @@ export default function PokemonCardList() {
       {isFetchingNextPage && (
         <div
           style={{ gridColumn: "1 / -1" }}
-          className="flex items-center justify-center"
+          className="mb-10 flex items-center justify-center"
         >
           <Loader className="size-8 shrink-0 animate-spin text-gray-700" />
         </div>
@@ -70,7 +70,7 @@ export default function PokemonCardList() {
 
 function Container({ children }: { children: React.ReactNode }) {
   return (
-    <ScrollArea className="h-screen max-h-screen w-full">
+    <ScrollArea className="h-screen max-h-screen w-full lg:h-auto">
       <section className="grid w-full grid-cols-2 place-content-start gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {children}
       </section>

@@ -15,8 +15,8 @@ export default function PokemonPageSkeleton() {
             <Skeleton className="h-6 w-[40px]" />
           </div>
         </div>
-        <section className="flex flex-1 flex-col gap-4 md:flex-row xl:mx-auto">
-          <Skeleton className="h-[370px] md:h-[720px] md:w-[400px] lg:w-[700px]" />
+        <section className="flex h-screen max-h-screen flex-col gap-4 md:flex-row xl:mx-auto">
+          <Skeleton className="h-full max-h-screen md:w-[400px] lg:w-[700px]" />
           <PokemonDetailsSkeleton />
         </section>
       </div>
