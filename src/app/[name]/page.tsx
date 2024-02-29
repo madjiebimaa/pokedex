@@ -53,7 +53,7 @@ export default function PokemonPage({
       </section>
       <section className="flex h-screen max-h-screen flex-col gap-4 md:flex-row xl:mx-auto">
         <PokemonCardImage
-          className="h-full max-h-screen md:w-[400px] lg:w-[700px]"
+          className="h-[400px] max-h-screen md:h-full md:w-[400px] lg:w-[700px]"
           pokemon={{
             id: pokemon.id,
             name: pokemon.name,
