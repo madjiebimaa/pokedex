@@ -9,7 +9,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Pokédex",
-  description: "",
+  description:
+    "Your Pokémon journey starts here, where every click opens a portal to the vast and enchanting world of pocket monsters.",
 };
 
 export default function RootLayout({

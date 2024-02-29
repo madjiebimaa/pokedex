@@ -1,7 +1,7 @@
 import { GetPokemonResponse, Pokemon } from "@/lib/types";
 import { httpClient } from "@/lib/utils";
 
-const ENDPOINT = "http://localhost:3000/api";
+const ENDPOINT = process.env.NEXT_PUBLIC_ENDPOINT;
 
 export async function getPokemons(
   page: number = 1,
